@@ -1,1 +1,9 @@
-"# Docker Compose config" 
+version: '3.8'
+
+services:
+  jara-app:
+    build: .
+    container_name: jara_backend
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
