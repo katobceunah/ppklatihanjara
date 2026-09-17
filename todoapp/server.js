@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
+app.use(express.static('public')); // Baris baru untuk menampilkan index.html
 
 // --- DATABASE DUMMY ---
 const users = [];
