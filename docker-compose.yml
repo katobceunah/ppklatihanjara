@@ -1,7 +1,7 @@
 services:
   jara-app:
     build: .
-    container_name: jara_backend
+    container_name: jara_laravel
     ports:
-      - "3000:3000"
+      - "8000:8000"
     restart: unless-stopped
